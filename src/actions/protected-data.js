@@ -59,8 +59,8 @@ export const fetchProtectedData = () => dispatch => {
   }
 
   export const fetchAddItem = itemId => dispatch => {
-    return fetch(`hello/api/users/${itemId}`, {
-      method: 'POST',
+    return fetch(`${API_BASE_URL}/users/${itemId}`, {
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
       },
